@@ -1,4 +1,3 @@
-img/
-torta.jpg
-trompo.jpg
-trompo-2.jpg
+<img src="trompo-2.jpg">
+<img src="torta.jpg">
+<img src="trompo.jpg">
