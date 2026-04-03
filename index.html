@@ -6,6 +6,59 @@
 <title>Taquería La Oaxaqueña Mixe 6</title>
 
 <style>
+    /* ANIMACIONES */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeUp 0.8s ease;
+}
+
+/* NAV HOVER PRO */
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #25D366;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* BOTÓN MÁS PRO */
+.btn, .ordenar-btn {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn:hover, .ordenar-btn:hover {
+    transform: scale(1.08);
+}
+
+/* GALERÍA MÁS PRO */
+.gallery img {
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08) rotate(1deg);
+}
     .menu-item {
     text-align: center;
 }
@@ -363,7 +416,18 @@ footer {
 
 <footer>
 <p>© 2026 Taquería La Oaxaqueña Mixe 6</p>
-</footer>
 
+<p style="margin-top:10px; font-size:14px; color:#ccc;">
+    💻 Hecha por <strong>VegaJC</strong>
+</p>
+
+<p style="font-size:14px;">
+    📲 ¿Quieres tu propia página web para tu negocio?  
+    <br>
+    <a href="https://wa.me/526145547056" style="color:#0ee25c; text-decoration:none;">
+        Contáctame: 614 554 7056
+    </a>
+</p>
+</footer>
 </body>
 </html>
